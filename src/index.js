@@ -1,6 +1,7 @@
-import React from 'react'
-import styles from './styles.module.css'
+import ThemeProvider from './ThemeProvider'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { useTheme } from './hooks'
+
+export { ThemeModes } from './constants'
+
+export default ThemeProvider

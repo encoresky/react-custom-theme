@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-native-custom-theme'
-import 'react-native-custom-theme/dist/index.css'
+import { ExampleComponent } from 'react-custom-theme'
+import 'react-custom-theme/dist/index.css'
 
 const App = () => {
   return <ExampleComponent text="Create React Library Example 😄" />

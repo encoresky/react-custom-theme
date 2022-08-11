@@ -1,13 +1,13 @@
-# react-native-custom-theme
+# react-custom-theme
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/react-native-custom-theme.svg)](https://www.npmjs.com/package/react-native-custom-theme) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-custom-theme.svg)](https://www.npmjs.com/package/react-custom-theme) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-native-custom-theme
+npm install --save react-custom-theme
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save react-native-custom-theme
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-native-custom-theme'
-import 'react-native-custom-theme/dist/index.css'
+import MyComponent from 'react-custom-theme'
+import 'react-custom-theme/dist/index.css'
 
 class Example extends Component {
   render() {
@@ -27,4 +27,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [vishai12345](https://github.com/vishai12345)
+MIT © [vishalchaturvediencoresky](https://github.com/vishalchaturvediencoresky)

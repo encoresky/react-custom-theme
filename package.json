@@ -1,10 +1,10 @@
 {
-  "name": "react-native-custom-theme",
+  "name": "react-custom-theme",
   "version": "1.0.0",
   "description": "Made with create-react-library",
-  "author": "vishai12345",
+  "author": "vishalchaturvediencoresky",
   "license": "MIT",
-  "repository": "vishai12345/react-native-custom-theme",
+  "repository": "vishalchaturvediencoresky/react-custom-theme",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

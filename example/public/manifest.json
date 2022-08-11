@@ -1,6 +1,6 @@
 {
-  "short_name": "react-native-custom-theme",
-  "name": "react-native-custom-theme",
+  "short_name": "react-custom-theme",
+  "name": "react-custom-theme",
   "icons": [
     {
       "src": "favicon.ico",
