@@ -131,6 +131,9 @@ setTheme | function | set new theme, it takes new theme mode as parameter
 ## Authors
 - [Vishal Chaturvedi](https://github.com/vishalchaturvediencoresky)
 
+## Credits
+- [Balveer Dhanoriya](https://github.com/estbalveer)
+
 ## Contributing
 Pull requests are most welcome! Don't forget to add a title and a description that explain the issue you're trying to solve and your suggested solution. Screenshots and gifs are VERY helpful. Please do NOT format the files as we are trying to keep a unified syntax and the reviewing process fast and simple.
 
