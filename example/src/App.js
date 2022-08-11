@@ -1,10 +1,16 @@
 import React from 'react'
-
-import { ExampleComponent } from 'react-custom-theme'
-import 'react-custom-theme/dist/index.css'
+import ThemeProvider from 'react-custom-theme'
+import { dark, light } from './Colors'
+import Home from './Home'
+import Setting from './Setting'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <ThemeProvider darkTheme={dark} lightTheme={light}>
+      <Home />
+      <Setting />
+    </ThemeProvider>
+  )
 }
 
 export default App
