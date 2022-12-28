@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemeProvider from 'react-custom-theme'
+import ThemeProvider from '@encoreskytech/react-custom-theme'
 import { dark, light } from './Colors'
 import Home from './Home'
 import Setting from './Setting'

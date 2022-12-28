@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeModes, useTheme } from 'react-custom-theme'
+import { ThemeModes, useTheme } from '@encoreskytech/react-custom-theme'
 
 const Settings = () => {
   const { setTheme } = useTheme()

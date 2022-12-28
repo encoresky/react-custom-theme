@@ -12,7 +12,7 @@ React  custom theme is the library which enable your app to support multiple the
 ## Installation
 
 ```sh
-npm install react-custom-theme
+npm install @encoreskytech/react-custom-theme
 ```
 The solution is implemented in JavaScript so no  module linking is required
 
@@ -39,7 +39,7 @@ export const dark = {
 Wrap your app within ThemeProvider. ThemeProvider require light and dark theme objects as props
 ```tsx
 import React from 'react';
-import ThemeProvider from 'react-custom-theme';
+import ThemeProvider from '@encoreskytech/react-custom-theme';
 import {dark, light} from './Colors';
 import Home from './Home';
 
@@ -58,7 +58,7 @@ Import  ```useTheme``` hook and use **theme** and **isDarkTheme** variables to s
 ```tsx
 -- other imports ---
 
-import {useTheme} from 'react-custom-theme';
+import {useTheme} from '@encoreskytech/react-custom-theme';
 
 const Home = () => {
     const {theme, isDarkTheme} = useTheme();
@@ -83,7 +83,7 @@ To change theme use **setTheme** method from **useTheme** hook
 ```tsx
 -- other imports ---
 
-import {ThemeModes, useTheme} from 'react-custom-theme';
+import {ThemeModes, useTheme} from '@encoreskytech/react-custom-theme';
 
 const Settings () => {
     const {themeMode, setTheme} = useTheme();

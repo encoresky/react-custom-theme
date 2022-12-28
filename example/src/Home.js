@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTheme } from 'react-custom-theme'
+import { useTheme } from '@encoreskytech/react-custom-theme'
 
 const Home = () => {
   const { theme, isDarkTheme } = useTheme()
