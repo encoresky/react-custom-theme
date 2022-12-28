@@ -1,10 +1,10 @@
 {
-  "name": "react-custom-theme",
+  "name": "@encoreskytech/react-custom-theme",
   "version": "1.2.0",
   "description": "Made with create-react-library",
   "author": "vishalchaturvediencoresky",
   "license": "MIT",
-  "repository": "vishalchaturvediencoresky/react-custom-theme",
+  "repository": "@encoreskytech/react-custom-theme",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -49,5 +49,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
