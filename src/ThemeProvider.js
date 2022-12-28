@@ -1,7 +1,5 @@
 import * as React from 'react'
-import { Appearance, useColorScheme } from 'react-native'
 
-import AsyncStorage from '@react-native-async-storage/async-storage'
 import { ThemeModes } from './constants'
 import { ThemeContext } from './context'
 
@@ -10,11 +8,6 @@ const ThemeProvider = ({
   darkTheme = { mode: ThemeModes.DARK },
   lightTheme = { mode: ThemeModes.LIGHT }
 }) => {
-  /**
-   * useColorScheme hook provide device theme. It is triggered every time user change device theme
-   */
-  const colorScheme = useColorScheme()
-
   /**
    * @theme object contain color values for selected theme. it also have a additional parameter 'mode' which
    * determine if selected theme is light or dark.
@@ -35,7 +28,6 @@ const ThemeProvider = ({
   const onChangeTheme = React.useCallback(
     (newTheme, deviceColorScheme) => {
       setThemeMode(newTheme)
-      AsyncStorage.setItem('theme', newTheme ?? '')
 
       if (newTheme === ThemeModes.DEVICE_THEME) {
         setTheme(deviceColorScheme === 'dark' ? darkTheme : lightTheme)
@@ -47,23 +39,12 @@ const ThemeProvider = ({
   )
 
   /**
-   * Hook triggered every time device theme changes
-   */
-  React.useEffect(() => {
-    AsyncStorage.getItem('theme').then((newTheme) => {
-      const t = newTheme
-
-      onChangeTheme(t ?? 'light', colorScheme)
-    })
-  }, [colorScheme, onChangeTheme])
-
-  /**
    * Change theme method
    */
   const changeThemeMemo = React.useMemo(
     () => ({
       changeTheme: async (newTheme) => {
-        const deviceColorScheme = Appearance.getColorScheme()
+        const deviceColorScheme = 'Device color Scheme'
         onChangeTheme(newTheme, deviceColorScheme)
       }
     }),
